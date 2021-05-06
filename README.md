@@ -8,7 +8,6 @@ Twitter: [Summer's Twitter]( https://twitter.com/SecSummers )
 
 ### About Me &#x1F4E3;
 
-* 某二本院校本科大三在读
 * Web安全研究混子/Java安全混子
 * 没事会写点小脚本
 * SRC挖掘混子
