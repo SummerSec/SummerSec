@@ -23,9 +23,8 @@
 ### Github Status :coffee:
 
 
-![summersec's github stats](https://github-readme-stats.vercel.app/api?username=summersec&count_private=true&show_icons=true)
-<img align='right' src="https://github-readme-stats.vercel.app/api/top-langs/?username=summersec&layout=compact" width="400" >
-
+<img align='left' src="https://github-readme-stats.vercel.app/api?username=summersec&count_private=true&show_icons=true" width="400">
+<img align='right' src="https://github-readme-stats.vercel.app/api/top-langs/?username=summersec&layout=compact" width="350" >
 
 
 
