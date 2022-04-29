@@ -14,7 +14,7 @@ jobs:
     - uses: actions/checkout@master
     - uses: SummerSec/github-profile-terminal-action@main
       with:
-        feed_url: https://sumsec.me/resources/sitemap.xml
+        # feed_url: https://sumsec.me/resources/sitemap.xml
         twitter_username: SecSummers
         theme: dark
         token: ${{ secrets.RELEASE }}
