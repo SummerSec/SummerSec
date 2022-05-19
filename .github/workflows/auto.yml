@@ -31,6 +31,7 @@ jobs:
       uses: crazy-max/ghaction-github-pages@v2.6.0
       with:
         target_branch: master
+        author: SummerSec 
         build_dir: .
       env:
         GITHUB_TOKEN: ${{ secrets.RELEASE }}
