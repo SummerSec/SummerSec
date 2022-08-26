@@ -34,6 +34,8 @@
 
 ## Latest Posts 📝 
 
+<img align='right' src="https://tva4.sinaimg.cn/large/008k1Yt0ly1h4no500obvg30fk0bo1cn.gif" width="330" />
+
 [相似度算法调研](https://sumsec.me/2022/%E7%9B%B8%E4%BC%BC%E5%BA%A6%E7%AE%97%E6%B3%95%E8%B0%83%E7%A0%94.html)
 
 [CVE-2022-33891 Apache Spark shell command injection](https://sumsec.me/2022/CVE-2022-33891%20Apache%20Spark%20shell%20command%20injection.html)
