@@ -33,6 +33,7 @@ jobs:
         target_branch: master
         author: SummerSec@users.noreply.github.com
         committer: SummerSec@users.noreply.github.com
+        commit_message: ":beers: Update Commit And Fix GIF"
         build_dir: .
       env:
         GITHUB_TOKEN: ${{ secrets.RELEASE }}
