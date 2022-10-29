@@ -31,9 +31,9 @@ jobs:
       uses: crazy-max/ghaction-github-pages@v2.6.0
       with:
         target_branch: master
-        author: SummerSec
-        committer: SummerSec@users.noreply.github.com
-        commit_message: ":beers: Update Commit And Fix GIF"
+        author: SummerSec@users.noreply.github.com
+       # committer: SummerSec@users.noreply.github.com
+       # commit_message: ":beers: Update Commit And Fix GIF"
         build_dir: .
       env:
         GITHUB_TOKEN: ${{ secrets.RELEASE }}
