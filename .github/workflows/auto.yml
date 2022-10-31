@@ -27,13 +27,57 @@ jobs:
           dist/github-snake.svg
           dist/github-snake-dark.svg?palette=github-dark
           dist/ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
-    - name: push github-contribution-grid-snake.svg to the output branch
-      uses: crazy-max/ghaction-github-pages@v3.1.0
+#     - name: push github-contribution-grid-snake.svg to the output branch
+#       uses: crazy-max/ghaction-github-pages@v3.1.0
+#       with:
+#         target_branch: master
+#         author: SummerSec
+#         committer: SummerSec@users.noreply.github.com
+#         commit_message: ":beers: Update Commit And Fix GIF"
+#         build_dir: .
+#       env:
+#         GITHUB_TOKEN: ${{ secrets.RELEASE }}
+    - name: Add & Commit
+      uses: EndBug/add-and-commit@v9.1.1
       with:
-        target_branch: master
-        author: SummerSec
-        committer: SummerSec@users.noreply.github.com
-        commit_message: ":beers: Update Commit And Fix GIF"
-        build_dir: .
-      env:
-        GITHUB_TOKEN: ${{ secrets.RELEASE }}
+        # The arguments for the `git add` command (see the paragraph below for more info)
+        # Default: '.'
+        add: '.'
+
+        # The name of the user that will be displayed as the author of the commit.
+        # Default: depends on the default_author input
+        author_name: SummerSec
+
+        # The email of the user that will be displayed as the author of the commit.
+        # Default: depends on the default_author input
+        author_email: SummerSec@users.noreply.github.com
+
+        # The name of the custom committer you want to use, if different from the author of the commit.
+        # Default: the name of the author (set with either author_name or default_author)
+        committer_name: SummerSec
+
+        # The email of the custom committer you want to use, if different from the author of the commit.
+        # Default: the email of the author (set with either author_email or default_author)
+        committer_email: SummerSec@users.noreply.github.com
+
+
+        # Determines the way the action fills missing author name and email. Three options are available:
+        # - github_actor -> UserName <UserName@users.noreply.github.com>
+        # - user_info -> Your Display Name <your-actual@email.com>
+        # - github_actions -> github-actions <email associated with the github logo>
+        # Default: github_actor
+        default_author: SummerSec@users.noreply.github.com
+
+
+        # The message for the commit.
+        # Default: 'Commit from GitHub Actions (name of the workflow)'
+        message: 'Commit from GitHub Actions Auto Actions'
+
+        # The way the action should handle pathspec errors from the add and remove commands. Three options are available:
+        # - ignore -> errors will be logged but the step won't fail
+        # - exitImmediately -> the action will stop right away, and the step will fail
+        # - exitAtEnd -> the action will go on, every pathspec error will be logged at the end, the step will fail.
+        # Default: ignore
+        pathspec_error_handling: ignore
+
+
