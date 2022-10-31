@@ -27,16 +27,17 @@ jobs:
           dist/github-snake.svg
           dist/github-snake-dark.svg?palette=github-dark
           dist/ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
-#     - name: push github-contribution-grid-snake.svg to the output branch
-#       uses: crazy-max/ghaction-github-pages@v3.1.0
-#       with:
-#         target_branch: master
-#         author: SummerSec
-#         committer: SummerSec@users.noreply.github.com
-#         commit_message: ":beers: Update Commit And Fix GIF"
-#         build_dir: .
-#       env:
-#         GITHUB_TOKEN: ${{ secrets.RELEASE }}
+    - name: push github-contribution-grid-snake.svg to the output branch
+      uses: crazy-max/ghaction-github-pages@v2.6.0
+      with:
+        target_branch: output
+        author: SummerSec
+        committer: SummerSec@users.noreply.github.com
+        commit_message: ":beers: Update Commit And Fix GIF"
+        build_dir: .
+      env:
+        GITHUB_TOKEN: ${{ secrets.RELEASE }}
+    - uses: actions/checkout@v3
     - name: Add & Commit
       uses: EndBug/add-and-commit@v9.1.1
       with:
