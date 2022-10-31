@@ -11,4 +11,4 @@ jobs:
       - name: Add emoji 🥰
         uses: tiena2cva/action-emoji@v1
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.RELEASE }}
