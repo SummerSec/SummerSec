@@ -87,7 +87,7 @@ jobs:
         # Optional. Options used by `git-commit`.
         # See https://git-scm.com/docs/git-commit#_options
         commit_options: '--no-verify --signoff'
-
+        branch: output
 
         # Optional. Local file path to the repository.
         # Defaults to the root of the repository.
